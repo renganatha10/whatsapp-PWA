@@ -1,0 +1,192 @@
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.custom-button {
+  border-radius: 2px;
+  background-color: grey;
+}
+
+#root {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.positioning {
+  height: 100%;
+  background-color: red;
+  right: 0px;
+  top: 0px;
+  transition: width 0.4s ease-in-out;
+}
+
+.details-pane {
+  width: 0%;
+  position: absolute;
+  height: 100%;
+  background-color: red;
+  right: 0px;
+  top: 0px;
+  transition: width 0.4s ease-in-out;
+}
+
+// breakpoint screen widths
+$large: 1390px;
+$medium: 767px;
+$small: 480px;
+
+@mixin bp-large {
+  @media only screen and (max-width: $large) {
+    @content;
+  }
+}
+@mixin bp-medium {
+  @media only screen and (max-width: $medium) {
+    @content;
+  }
+}
+@mixin bp-small {
+  @media only screen and (max-width: $small) {
+    @content;
+  }
+}
+
+@mixin sample {
+  font-size: 10px
+}
+
+
+.chat-list-pane{
+  @include bp-large {
+    width: 35%;
+    height: 100%;
+    float: left;
+    background-color: red;
+    transition: width 0.4s ease-in-out;
+  };
+
+  @include bp-medium {
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: red;
+    transition: width 0.4s ease-in-out;
+  };
+
+  @include bp-small{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: red;
+    transition: width 0.4s ease-in-out;
+  };
+}
+
+.chat-list-close {
+  @include bp-large{
+    width: 30%;
+  };
+
+  @include bp-medium{
+    width: 40%;
+  };
+}
+
+.chat-pane {
+  @include bp-large{
+    width: 65%;
+    height: 100%;
+    float: left;
+    background-color: green;
+    transition: width 0.4s ease-in-out;
+  };
+
+  @include bp-medium{
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-color: yellow;
+    transition: width 0.4s ease-in-out;
+  };
+
+  @include bp-small{
+    width: 0%;
+    position: absolute;
+    z-index: 50;
+    height: 100%;
+    right: 0;
+    background-color: black;
+    transition: width 0.4s ease-in-out;
+  };
+
+}
+
+
+
+.chat-close {
+  @include bp-large{
+    width: 40%;
+  };
+
+
+  @include bp-small{
+    width: 100%;
+  };
+}
+
+.details-pane-open {
+  @include bp-large{
+    width: 30%;
+    position: absolute;
+    height: 100%;
+    background-color: red;
+    right: 0px;
+    top: 0px;
+    transition: width 0.4s ease-in-out;
+  };
+
+  @include bp-medium{
+    width: 60%;
+    position: absolute;
+    height: 100%;
+    background-color: red;
+    right: 0px;
+    top: 0px;
+    transition: width 0.4s ease-in-out;
+  };
+
+  @include bp-small{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    background-color: red;
+    right: 0px;
+    top: 0px;
+    transition: width 0.4s ease-in-out;
+  };
+}
+
+.open-chat {
+  @include bp-large{
+    display: none;
+  };
+
+  @include bp-medium{
+    display: none
+  };
+
+  @include bp-small{
+    display: inherit;
+  };
+}
