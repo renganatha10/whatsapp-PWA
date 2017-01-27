@@ -7,7 +7,7 @@ export default class ListViewRow extends Component {
     return (
         <div className="list-row ">
             <div className="flex" >
-              <div className="flex-15" >
+              <div className="flex justify-content-center flex-15" >
                 <AvartarImage />
               </div>
               <div className="flex-85 flex flex-direction-column justify-content-center">
