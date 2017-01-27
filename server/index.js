@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000;
 const compiler = webpack(config);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-app.use(Express.static(path.join(__dirname, 'static')));
+app.use(Express.static('public'))
 app.use(Express.static(path.join(__dirname, 'static')));
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
 app.use(webpackHotMiddleware(compiler));

@@ -2,6 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -18,6 +20,7 @@ module.exports = {
     new webpack.optimize.OccurrenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.optimize.DedupePlugin(),
+    new ExtractTextPlugin('app.css'),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer'
     }),
@@ -43,11 +46,11 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        loader: 'style!css!postcss!sass'
+        loader: ExtractTextPlugin.extract('style', 'css!postcss!sass')
       },
       {
         test: /\.css$/,
-        loader: 'style!css!postcss'
+        loader: ExtractTextPlugin.extract('style', 'css!postcss')
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,

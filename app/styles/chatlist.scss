@@ -1,0 +1,49 @@
+
+.navbar {
+  background-color: $primaryColor;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchBox {
+  background-color: rgba(255,255,255,0.14);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 10px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px $primaryColor solid;
+  background-color: white;
+}
+
+.input-box {
+  border: none;
+  width: 100%;
+  min-height: 20px;
+  user-select: text;
+  line-height: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+}
+.list-view {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow:scroll;
+}
+
+.list-row {
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.9em;
+  font-family: 'Roboto'
+}

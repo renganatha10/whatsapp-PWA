@@ -1,0 +1,62 @@
+.avatar-image {
+  height: 34px;
+  width: 34px;
+  border-radius: 17px;
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+}
+.center-align{
+  align-self: center;
+  justify-content: center;
+}
+
+.flex-75 {
+  flex: .75;
+}
+
+.flex-10{
+  flex: .1;
+}
+.flex-80{
+  flex: .80;
+}
+
+.flex-15 {
+  flex: .15;
+}
+
+.flex-85 {
+  flex: .85;
+}
+
+.flex-25 {
+  flex: .25;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.flex-end {
+  align-items: flex-end;
+}
+
+.alignItems-center {
+  align-items: center;
+}
+
+.justifiy-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}

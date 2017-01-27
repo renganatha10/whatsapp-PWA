@@ -1,30 +1,5 @@
-body, html, #root {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  padding: 0px;
-  margin: 0px;
-}
-
-.custom-button {
-  border-radius: 2px;
-  background-color: grey;
-}
-
-#root {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.container {
-  position: relative;
-  height: 100%;
-}
-
 .positioning {
   height: 100%;
-  background-color: red;
   right: 0px;
   top: 0px;
   transition: width 0.4s ease-in-out;
@@ -34,7 +9,7 @@ body, html, #root {
   width: 0%;
   position: absolute;
   height: 100%;
-  background-color: red;
+
   right: 0px;
   top: 0px;
   transition: width 0.4s ease-in-out;
@@ -71,7 +46,11 @@ $small: 480px;
     width: 35%;
     height: 100%;
     float: left;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    border-color: $primaryColor;
+    border-right-width: 1px;
+    border-right-style: solid;
     transition: width 0.4s ease-in-out;
   };
 
@@ -79,7 +58,11 @@ $small: 480px;
     width: 40%;
     height: 100%;
     float: left;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    border-color: $primaryColor;
+    border-right-width: 1px;
+    border-right-style: solid;
     transition: width 0.4s ease-in-out;
   };
 
@@ -87,7 +70,11 @@ $small: 480px;
     width: 100%;
     height: 100%;
     float: left;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    border-color: $primaryColor;
+    border-right-width: 1px;
+    border-right-style: solid;
     transition: width 0.4s ease-in-out;
   };
 }
@@ -107,7 +94,7 @@ $small: 480px;
     width: 65%;
     height: 100%;
     float: left;
-    background-color: green;
+
     transition: width 0.4s ease-in-out;
   };
 
@@ -115,7 +102,7 @@ $small: 480px;
     width: 60%;
     height: 100%;
     float: left;
-    background-color: yellow;
+
     transition: width 0.4s ease-in-out;
   };
 
@@ -125,7 +112,7 @@ $small: 480px;
     z-index: 50;
     height: 100%;
     right: 0;
-    background-color: black;
+
     transition: width 0.4s ease-in-out;
   };
 
@@ -149,7 +136,7 @@ $small: 480px;
     width: 30%;
     position: absolute;
     height: 100%;
-    background-color: red;
+
     right: 0px;
     top: 0px;
     transition: width 0.4s ease-in-out;
@@ -159,7 +146,7 @@ $small: 480px;
     width: 60%;
     position: absolute;
     height: 100%;
-    background-color: red;
+
     right: 0px;
     top: 0px;
     transition: width 0.4s ease-in-out;
@@ -170,7 +157,7 @@ $small: 480px;
     position: absolute;
     z-index: 100;
     height: 100%;
-    background-color: red;
+
     right: 0px;
     top: 0px;
     transition: width 0.4s ease-in-out;
