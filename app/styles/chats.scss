@@ -1,0 +1,94 @@
+.chat-navbar {
+  background-color: $primaryColor;
+  padding: 10px;
+  order: 1;
+  display: flex;
+  height: 57px;
+}
+
+.chat-avatar {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-details {
+  font-family: "Roboto";
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-title {
+  flex: 1;
+  text-align: left;
+}
+
+.chat-details {
+  flex: 1;
+  text-align: left;
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.chat-icon-container {
+  flex: 0.2;
+  display:flex;
+  justify-content: space-around;
+}
+.bxst0{
+  fill: silver;
+}
+
+.chat-content-container{
+  background-image: url('http://img13.deviantart.net/31cf/i/2015/028/8/6/super_hero_whatsapp_background_by_x_ama-d8fr7iz.jpg');
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  order: 2;
+}
+
+.composer-container {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $primaryColor;
+  order: 3;
+}
+
+.emoji-icon {
+  display: flex;
+  flex: 0.05;
+  justify-content: center;
+  align-items: center;
+}
+
+.composer-input-container {
+  display: flex;
+  flex: 0.9;
+  width: 100%;
+  div {
+    width: 100%;
+  }
+  input {
+    padding: 5px;
+    min-height: 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 3px;
+  }
+}
+
+.mic-icon {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 0.05;
+}

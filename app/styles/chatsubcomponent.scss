@@ -1,0 +1,63 @@
+.bubble-container {
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.bubble-container::after {
+  content: '';
+  display: table;
+  clear: both
+}
+
+.bubble {
+  background-color: $secondaryColor;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 6px;
+  max-width: 90%;
+}
+
+.rightBubble {
+  float: right;
+  @extend .bubble;
+}
+
+.leftBubble {
+  float: left;
+  @extend .bubble;
+}
+
+.text-bubble {
+  padding: 5px 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.hookup {
+  content: '';
+  background-color: $secondaryColor;
+  position: absolute;
+  top: 5px;
+  width: 12px;
+  height: 15px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 9;
+}
+
+.hookup-right {
+  @extend .hookup;
+  right: -3px;
+  transform: rotate(25deg);
+}
+
+.hookup-left {
+  @extend .hookup;
+  left: -3px;
+  transform: rotate(45deg);
+}
