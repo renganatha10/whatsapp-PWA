@@ -1,8 +1,8 @@
 import React,{ Component } from 'react';
 import MoreVertOptions from './MoreVertOption';
-import AvartarImage from './../Shared/avatar';
 import MessageIcon from './../Shared/Icons/Message';
 import MoreVert from './../Shared/Icons/MoreVert';
+import AvartarImage from './../Shared/avatar';
 import classnames from 'classnames';
 
 export default class AppBar extends Component {
