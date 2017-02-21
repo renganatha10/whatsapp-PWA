@@ -1,8 +1,8 @@
-import React,{ Component } from 'react';
-import AvartarImage from './../Shared/avatar';
+import React, { Component } from 'react';
+import AvartarImage from './../Shared/Avatar';
 
-export default class ListViewRow extends Component {
 
+class ListViewRow extends Component {
   render() {
     return (
         <div className="list-row ">
@@ -25,3 +25,5 @@ export default class ListViewRow extends Component {
     );
   }
 }
+
+export default ListViewRow;

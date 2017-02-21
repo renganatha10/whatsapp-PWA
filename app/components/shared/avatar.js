@@ -1,6 +1,7 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 
-export default class Class extends Component {
+
+class Avatar extends Component {
   render() {
     return (
         <div>
@@ -9,3 +10,5 @@ export default class Class extends Component {
     );
   }
 }
+
+export default Avatar;

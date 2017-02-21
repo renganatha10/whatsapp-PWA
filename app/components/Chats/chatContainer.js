@@ -1,9 +1,9 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import TextBubble from './ChatSubComponents/TextBubble';
 import ChatBubble from './ChatSubComponents';
 
-export default class ChatContainer extends Component {
 
+class ChatContainer extends Component {
   render() {
     return (
         <div className="chat-content-container">
@@ -19,3 +19,5 @@ export default class ChatContainer extends Component {
     );
   }
 }
+
+export default ChatContainer;

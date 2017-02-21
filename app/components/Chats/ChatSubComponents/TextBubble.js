@@ -1,8 +1,9 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import ContactContainer from './ContactIndicator';
 import TimeContainer from './TimeIndicator';
 
-export default class TextComponent extends Component {
+
+class TextComponent extends Component {
   render() {
     return (
         <div className="text-bubble">
@@ -17,3 +18,5 @@ export default class TextComponent extends Component {
 TextComponent.propTypes = {
   className: React.PropTypes.string
 };
+
+export default TextComponent;

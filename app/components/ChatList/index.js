@@ -1,9 +1,10 @@
-import React,{ Component } from 'react';
-import AppBar from './appBar';
-import SearchBox from './searchBox';
-import ListView from './listView';
+import React, { Component } from 'react';
+import AppBar from './AppBar';
+import SearchBox from './SearchBox';
+import ListView from './ListView';
 
-export default class ChatList extends Component {
+
+class ChatList extends Component {
   render() {
     return (
       <div className="chat-list-pane">
@@ -14,3 +15,5 @@ export default class ChatList extends Component {
     );
   }
 }
+
+export default ChatList;

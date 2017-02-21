@@ -1,7 +1,7 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 
-export default class ChatBubble extends Component {
 
+class ChatBubble extends Component {
   render() {
     const { children, className } = this.props;
     return (
@@ -15,6 +15,8 @@ export default class ChatBubble extends Component {
 }
 
 ChatBubble.propTypes = {
-  children : React.PropTypes.node,
+  children: React.PropTypes.node,
   className: React.PropTypes.string
 };
+
+export default ChatBubble;

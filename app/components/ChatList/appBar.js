@@ -1,11 +1,12 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import MoreVertOptions from './MoreVertOption';
 import MessageIcon from './../Shared/Icons/Message';
 import MoreVert from './../Shared/Icons/MoreVert';
-import AvartarImage from './../Shared/avatar';
+import AvartarImage from './../Shared/Avatar';
 import classnames from 'classnames';
 
-export default class AppBar extends Component {
+
+class AppBar extends Component {
   constructor(props) {
     super(props);
     this.onClick = this.onClick.bind(this);
@@ -33,7 +34,7 @@ export default class AppBar extends Component {
               </button>
               <button onClick={this.onClick} className="more-vert" >
                  <MoreVertOptions
-                   className={classnames('more-vert-option', { 'active': showMoreVertOption })} />
+                   className={classnames('more-vert-option', { active: showMoreVertOption })} />
                 <MoreVert />
               </button>
             </div>
@@ -41,3 +42,5 @@ export default class AppBar extends Component {
     );
   }
 }
+
+export default AppBar;

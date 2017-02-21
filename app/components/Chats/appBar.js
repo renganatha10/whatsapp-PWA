@@ -1,12 +1,11 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import AvartarImage from './../Shared/avatar';
 import MoreVert from './../Shared/Icons/MoreVert';
 import Search from './../Shared/Icons/Search';
 import ShareIcon from './../Shared/Icons/Share';
 
 
-export default class AppBar extends Component {
-
+class AppBar extends Component {
   render() {
     return (
         <div className="chat-navbar">
@@ -26,3 +25,5 @@ export default class AppBar extends Component {
     );
   }
 }
+
+export default AppBar;

@@ -1,7 +1,7 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 
-export default class TimeContainer extends Component {
 
+class TimeContainer extends Component {
   render() {
     return (
       <div className="class-name">
@@ -10,3 +10,5 @@ export default class TimeContainer extends Component {
     );
   }
 }
+
+export default TimeContainer;

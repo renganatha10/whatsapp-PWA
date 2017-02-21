@@ -15,6 +15,11 @@ module.exports = {
   "plugins": [
     "react"
   ],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true
+  },
   "rules": {
     "indent": [
       "error",
@@ -74,9 +79,6 @@ module.exports = {
       "error",
       "as-needed"
     ],
-    "no-confusing-arrow": [
-      "error"
-    ],
     "no-useless-constructor": [
       "error"
     ],
@@ -93,7 +95,8 @@ module.exports = {
       "error"
     ],
     "generator-star-spacing": [
-      "error"
+      "error",
+      "after"
     ],
     "dot-notation": [
       "error"
@@ -132,6 +135,12 @@ module.exports = {
     "array-bracket-spacing": [
       "error"
     ],
+    "no-multiple-empty-lines": [
+      "error"
+    ],
+    "key-spacing": [
+      "error"
+    ],
     "object-curly-spacing": [
       "error",
       "always", {
@@ -140,6 +149,15 @@ module.exports = {
       }
     ],
     "camelcase": [
+      "error"
+    ],
+    "no-trailing-spaces":[
+      "error"
+    ],
+    "no-multi-spaces":[
+      "error"
+    ],
+    "no-irregular-whitespace":[
       "error"
     ],
     "new-cap": [
@@ -157,5 +175,13 @@ module.exports = {
     "react/jsx-boolean-value": [
       "error"
     ],
+    "comma-spacing": [
+      2, {
+        "before": false,
+        "after": true
+      }
+    ],
+
+    "no-console": 0
   }
 };

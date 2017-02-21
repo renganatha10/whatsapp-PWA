@@ -1,7 +1,7 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 
-export default class MoreVertOptions extends Component {
 
+class MoreVertOptions extends Component {
   render() {
     return (
         <div className={this.props.className}>
@@ -17,3 +17,9 @@ export default class MoreVertOptions extends Component {
     );
   }
 }
+
+MoreVertOptions.propTypes = {
+  className: React.PropTypes.string
+};
+
+export default MoreVertOptions;
