@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
-import AvartarImage from './../Shared/avatar';
 import MessageIcon from './../Shared/Icons/Message';
 import MoreVert from './../Shared/Icons/MoreVert';
+import AvartarImage from './../Shared/avatar';
 import MoreVertOptions from './MoreVertOption';
 import classnames from 'classnames';
 
