@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AppBar from './AppBar';
-import ChatContent from './ChatContainer';
+import AppBar from './appBar';
+import ChatContent from './chatContainer';
 import Composer from './Composer';
 
 

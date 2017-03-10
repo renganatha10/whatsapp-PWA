@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AppBar from './appBar';
-import SearchBox from './SearchBox';
+import SearchBox from './searchBox';
 import ListView from './ListView';
 
 
