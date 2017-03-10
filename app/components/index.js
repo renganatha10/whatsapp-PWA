@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ChatList from './ChatList';
 import Chats from './Chats';
+import Details from './Details';
 
-export default class Class extends Component {
+class App extends Component {
 
   render() {
     return (
@@ -10,9 +11,12 @@ export default class Class extends Component {
           <div className="app-wrapper" >
               <ChatList />
               <Chats />
+              <Details />
           </div>
 
         </div>
     );
   }
 }
+
+export default App;

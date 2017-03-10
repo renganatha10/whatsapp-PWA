@@ -9,7 +9,6 @@
   width: 0%;
   position: absolute;
   height: 100%;
-
   right: 0px;
   top: 0px;
   transition: width 0.4s ease-in-out;
@@ -34,10 +33,6 @@ $small: 480px;
   @media only screen and (max-width: $small) {
     @content;
   }
-}
-
-@mixin sample {
-  font-size: 10px
 }
 
 

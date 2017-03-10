@@ -7,7 +7,7 @@ import Composer from './Composer';
 class Chat extends Component {
   render() {
     return (
-      <div className="chat-pane">
+      <div className="chat-pane chat-close">
         <AppBar />
         <ChatContent />
         <Composer />
