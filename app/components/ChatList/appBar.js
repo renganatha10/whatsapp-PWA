@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MoreVertOptions from './MoreVertOption';
 import MessageIcon from './../Shared/Icons/Message';
 import MoreVert from './../Shared/Icons/MoreVert';
-import AvartarImage from './../Shared/Avatar';
+import AvartarImage from './../Shared/AvatarImage';
 import classnames from 'classnames';
 
 

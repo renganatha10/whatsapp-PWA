@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AvartarImage from './../Shared/avatar';
+import AvartarImage from './../Shared/AvatarImage';
 import MoreVert from './../Shared/Icons/MoreVert';
 import Search from './../Shared/Icons/Search';
 import ShareIcon from './../Shared/Icons/Share';

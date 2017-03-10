@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AvartarImage from './../Shared/Avatar';
+import AvartarImage from './../Shared/AvatarImage';
 
 
 class ListViewRow extends Component {

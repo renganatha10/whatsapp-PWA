@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AppBar from './AppBar';
+import AppBar from './appBar';
 import SearchBox from './SearchBox';
 import ListView from './ListView';
 
