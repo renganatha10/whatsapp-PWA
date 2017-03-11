@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route,Router, browserHistory } from 'react-router';
+import { Route, Router, browserHistory } from 'react-router';
 import App from './../components';
 import NoMatch from './../components/noMatch';
 

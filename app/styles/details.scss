@@ -15,3 +15,13 @@
   padding: 10px;
   border-radius: 100px;
 }
+
+
+@keyframes opendialog {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

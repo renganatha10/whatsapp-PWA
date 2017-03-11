@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AppBar from './appBar';
 import SearchBox from './searchBox';
-import ListView from './ListView';
+import ListView from './listView';
 
 
 class ChatList extends Component {

@@ -4,7 +4,6 @@ import Details from './Details';
 
 
 class AvatarDetails extends Component {
-
   render() {
     return (
         <div className="avatar-details">
