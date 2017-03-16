@@ -9,23 +9,16 @@ module.exports = {
     './app'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'static'),
     filename: 'bundle.js',
-    publicPath: '/static/'
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'WhatsApp Clone',
-      template: 'server/views/index.ejs'
+      template: './index.html',
     }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      mangle: true,
-      sourcemap: false,
-      beautify: false
-    })
+    new webpack.HotModuleReplacementPlugin()
   ],
   module: {
     loaders: [
