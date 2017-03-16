@@ -4,16 +4,11 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WhatsApp Clone</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link href='/static/app.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div id="root"><%- markup -%></div>
-    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-
-    <script src="/static/bundle.js"></script>
-    <!-- endbuild -->
-    <script>if (window.module) module = window.module;</script>
+    <div id="root"></div>
   </body>
 </html>
