@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WhatsApp Clone</title>
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link href='/static/app.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div id="root"><%- markup -%></div>
+    <div id="root"></div>
+    <script type="text/javascript">
+      window.__PRELOADED_STATE__ ='preloadedState';
+    </script>
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-
-    <script src="/static/bundle.js"></script>
-    <!-- endbuild -->
     <script>if (window.module) module = window.module;</script>
   </body>
 </html>
