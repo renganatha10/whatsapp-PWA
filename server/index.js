@@ -30,7 +30,7 @@ app.get('*', (req, res) => {
       if (err) {
         return console.log(err);
       }
-      let document = file.replace(/<div id="app"><\/div>/, `<div id="app">${markup}</div>`);
+      let document = file.replace(/<div id="root"><\/div>/, `<div id="root">${markup}</div>`);
       document = document.replace(/'preloadedState'/, `'${JSON.stringify(preloadedState)}'`);
       res.setHeader('Cache-Control', 'public, max-age=31536000');
       res.setHeader('Expires', new Date(Date.now() + 2592000000).toUTCString());
