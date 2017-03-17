@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TextBubble from './ChatSubComponents/TextBubble';
-import ChatBubble from './ChatSubComponents';
+import TextBubble from './MessagesComponent/TextBubble';
+import ChatBubble from './MessagesComponent';
 
 
 class ChatContainer extends Component {

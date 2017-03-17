@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ChatList from './ChatList';
 import Details from './Details';
-import Chats from './Chats/index';
+import Messages from './Messages';
 import Dialog from './Dialog';
 import { hidePopup } from './../redux/actions/dialog';
 
@@ -14,7 +14,7 @@ class App extends Component {
         <div className="container" >
           <div className="app-wrapper" >
               <ChatList />
-              <Chats />
+              <Messages />
               <Details />
               {open ? <Dialog
                 open={open}

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import AppBar from './appBar';
-import ChatContent from './chatContainer';
+import AppBar from './AppBar';
+import ChatContent from './ChatContainer';
 import Composer from './Composer';
 
 
-class Chat extends Component {
+class Messages extends Component {
   render() {
     return (
       <div className="chat-pane chat-close">
@@ -16,4 +16,4 @@ class Chat extends Component {
   }
 }
 
-export default Chat;
+export default Messages;
