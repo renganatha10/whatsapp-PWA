@@ -7,13 +7,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
-  entry: [
-    './app'
-  ],
+  entry: {
+    app: './app',
+    vendor: [
+      'react',
+      'react-redux',
+      'redux',
+      'react-router',
+      'classnames',
+      'redux-devtools-extension',
+      'redux-persist'
+    ]
+  },
   output: {
     path: path.join(__dirname, 'static'),
-    filename: 'bundle.js',
-    publicPath: '/static'
+    filename: 'bundle.[name].[chunkhash].js',
+    publicPath: '/static/'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -25,18 +34,14 @@ module.exports = {
         removeComments: true
       }
     }),
-
+    new webpack.optimize.CommonsChunkPlugin({
+      name: ['vendor'],
+      minChunks: Infinity
+    }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new ExtractTextPlugin('app.css'),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer'
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false },
-      mangle: true,
-      sourcemap: false,
-      beautify: false,
-      dead_code: true
     })
   ],
   module: {
@@ -54,14 +59,14 @@ module.exports = {
         exclude: /node_modules/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader!sass-loader'
+          use: 'css-loader!postcss-loader!sass-loader'
         })
       },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader'
+          use: 'css-loader!postcss-loader'
         })
       },
       {
