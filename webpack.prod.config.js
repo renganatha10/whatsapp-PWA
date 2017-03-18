@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ServiceWorkerPlugin = require('serviceworker-webpack-plugin');
 
 
 module.exports = {
@@ -42,6 +43,9 @@ module.exports = {
     new ExtractTextPlugin('app.css'),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer'
+    }),
+    new ServiceWorkerPlugin({
+      entry: path.join(__dirname, './app/sw.js')
     })
   ],
   module: {
