@@ -45,7 +45,8 @@ module.exports = {
       defaultAttribute: 'defer'
     }),
     new ServiceWorkerPlugin({
-      entry: path.join(__dirname, './app/sw.js')
+      entry: path.join(__dirname, './app/sw.js'),
+      publicPath: '/static/'
     })
   ],
   module: {
