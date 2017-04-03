@@ -16,6 +16,7 @@ module.exports = {
       'redux',
       'react-router',
       'classnames',
+      'react-router-redux',
       'redux-devtools-extension',
       'redux-persist'
     ]
@@ -45,8 +46,7 @@ module.exports = {
       defaultAttribute: 'defer'
     }),
     new ServiceWorkerPlugin({
-      entry: path.join(__dirname, './app/sw.js'),
-      publicPath: '/static/'
+      entry: path.join(__dirname, './app/sw.js')
     })
   ],
   module: {

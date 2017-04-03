@@ -15,11 +15,11 @@ class App extends Component {
           <div className="app-wrapper" >
               <ChatList />
               <Messages />
-              <Details />
+              {/* <Details />
               {open ? <Dialog
                 open={open}
                 imageSrc={image}
-                closePopUp={this.props.hidePopup} /> : null}
+                closePopUp={this.props.hidePopup} /> : null} */}
           </div>
         </div>
     );

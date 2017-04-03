@@ -25,10 +25,10 @@ class AppBar extends Component {
     const { showMoreVertOption } = this.state;
     return (
         <div className="navbar">
-            <div className="flex-75" >
+            <div className="flex-75 avatar-container" >
               <AvartarImage />
             </div>
-            <div className="flex flex-25 justify-content-center" >
+            <div className="flex flex-25 justifiy-content-space-around" >
               <button>
                 <MessageIcon />
               </button>

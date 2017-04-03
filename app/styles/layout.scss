@@ -38,7 +38,7 @@ $small: 480px;
 
 .chat-list-pane{
   @include bp-large {
-    width: 35%;
+    width: 36%;
     height: 100%;
     float: left;
     display: flex;
@@ -86,7 +86,7 @@ $small: 480px;
 
 .chat-pane {
   @include bp-large{
-    width: 65%;
+    width: 64%;
     height: 100%;
     float: left;
     display: flex;
@@ -131,7 +131,7 @@ $small: 480px;
 
 .details-pane-open {
   @include bp-large{
-    width: 30%;
+    width: 25%;
     position: absolute;
     height: 100%;
 

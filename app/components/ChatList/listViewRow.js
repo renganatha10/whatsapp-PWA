@@ -7,10 +7,10 @@ class ListViewRow extends Component {
     return (
         <div className="list-row ">
             <div className="flex" >
-              <div className="flex justify-content-center flex-15" >
+              <div className="flex avatar-container flex-15" >
                 <AvartarImage />
               </div>
-              <div className="flex-85 flex flex-direction-column justify-content-center">
+              <div className="chat-body flex-85 flex flex-direction-column justify-content-center">
                 <div className="flex justifiy-content-space-between alignItems-center" >
                   <span>Mepco Guys</span>
                   <span>10.33 PM</span>

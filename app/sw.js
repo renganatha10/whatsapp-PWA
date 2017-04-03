@@ -1,4 +1,4 @@
-const CACHE_NAME = 'whatsappweb-cache-v1';
+const CACHE_NAME = 'whatsappweb-cache-v2';
 const {
   assets,
 } = global.serviceWorkerOption;
@@ -14,7 +14,6 @@ self.addEventListener('install', event => {
     caches.open(CACHE_NAME)
       .then(cache => {
         console.log('Opened cache');
-        console.log(urlsToCache);
         return cache.addAll(urlsToCache);
       })
   );

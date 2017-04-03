@@ -9,6 +9,9 @@ button {
   border-color: transparent;
   outline: none;
   cursor: pointer;
+  svg {
+    padding: 2px;
+  }
 }
 .center-align{
   align-self: center;
@@ -56,6 +59,10 @@ button {
 
 .justifiy-content-space-between {
   justify-content: space-between;
+}
+
+.justifiy-content-space-around {
+  justify-content: space-around;
 }
 
 .justify-content-center {

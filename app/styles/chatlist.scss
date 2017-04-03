@@ -1,16 +1,22 @@
 
 .navbar {
-  background-color: $primaryColor;
+  background-color: $backgroundColor;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.avatar-container {
+  padding: 0 5px 0 5px;
+  justify-content: center;
+  align-items: center;
+}
+
 .searchBox {
   background-color: rgba(255,255,255,0.14);
   border-bottom: 1px solid rgba(0,0,0,0.08);
-  padding: 10px;
+  padding: 4px;
 }
 
 .searchContainer {
@@ -25,7 +31,7 @@
 .input-box {
   border: none;
   width: 100%;
-  min-height: 20px;
+  min-height: 35px;
   user-select: text;
   line-height: 20px;
   padding-top: 5px;
@@ -40,10 +46,6 @@
 }
 
 .list-row {
-  padding-left: 5px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   font-size: 0.9em;
   font-family: 'Roboto'
 }
@@ -54,6 +56,21 @@
   transition: background-color 0.5s ease-out;
   &:hover{
     background-color: rgba(0,0,0,0.1);
+  }
+}
+
+.chat-body {
+  :first-child {
+    :first-child {
+      font-weight: bolder;
+      color: #000;
+    }
+  }
+  color: rgba(0,0,0,0.6);
+  padding: 10px 10px 10px 0px;
+  border-bottom: 1px solid $primaryColor;
+  div {
+    padding: 2px 0 2px 0;
   }
 }
 

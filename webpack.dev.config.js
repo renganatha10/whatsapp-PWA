@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ServiceWorkerPlugin = require('serviceworker-webpack-plugin');
 
 
 module.exports = {
@@ -18,7 +19,10 @@ module.exports = {
       title: 'WhatsApp Clone',
       template: './index.html',
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new ServiceWorkerPlugin({
+      entry: path.join(__dirname, './app/sw.js')
+    })
   ],
   module: {
     loaders: [

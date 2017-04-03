@@ -7,7 +7,7 @@ import ListView from './listView';
 class ChatList extends Component {
   render() {
     return (
-      <div className="chat-list-pane chat-list-close ">
+      <div className="chat-list-pane">
           <AppBar />
           <SearchBox />
           <ListView />
