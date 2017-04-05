@@ -32,7 +32,6 @@ class App extends PureComponent {
 
   render() {
     const { open, image } = this.props.dialog;
-
     return (
         <div className="container" >
           <div className="app-wrapper" >

@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import AppBar from './Appbar';
 import AvatarDetails from './AvatarDetails';
 import { connect } from 'react-redux';
+import classnames from 'classnames';
 import { closeContact } from './../../redux/actions/routes';
 
 
 class DetailRoot extends Component {
   render() {
+    const { routeName } = this.props;
     return (
-      <div className="details-pane-open">
+      <div className={classnames('details-pane-open',
+                      { 'details-pane-close': routeName !== 3 })}>
           <AppBar closeContact={this.props.closeContact} />
           <AvatarDetails />
       </div>
@@ -17,13 +20,14 @@ class DetailRoot extends Component {
 }
 
 const mapStateToProps = state => ({
-  route: state.route
+  routeName: state.routes.routeName
 });
 
 const mapDispatchToProps = dispatch => ({ closeContact: () => dispatch(closeContact()) });
 
 DetailRoot.propTypes = {
-  closeContact: React.PropTypes.func
+  closeContact: React.PropTypes.func,
+  routeName: React.PropTypes.number
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(DetailRoot);

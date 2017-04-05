@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import AvatarImage from './../../assets/avatar.png';
 
 
 class Avatar extends Component {
   render() {
     return (
-      <img src={AvatarImage} className="avatar-image" />
+      <img src="https://www.shareicon.net/data/128x128/2016/09/01/822736_user_512x512.png" className="avatar-image" />
     );
   }
 }
