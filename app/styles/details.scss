@@ -1,12 +1,12 @@
 .avatar-details {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 20px;
   background-color: #FFF;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   flex-direction: column;
   font-family: "Roboto";
+  height: 100%;
 }
 
 .avatar-image-big {

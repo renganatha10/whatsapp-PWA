@@ -12,7 +12,7 @@ class AppBar extends Component {
             <div className="chat-avatar" >
               <AvartarImage />
             </div>
-            <div className="chat-details" >
+            <div onClick={this.props.selectDetails} className="chat-details" >
               <div className="chat-title"><span>HBD Sree Kumar</span></div>
               <div className="chat-details"><span>Arun, ArunMani, Gopal, Kapilan, Karthikeyan, Komban, Kowshik, Kumar, Maaris, Mohaideen, Mohan, Nivas, Rajamani, Sakthivel, Sankar, Saravana, Sathish, Sree, Srini, Suresh, Surya, Viji, Yogesh, +31 6 87947387, +91 88701 24355, You</span></div>
             </div>
@@ -25,5 +25,9 @@ class AppBar extends Component {
     );
   }
 }
+
+AppBar.propTypes = {
+  selectDetails: React.PropTypes.func
+};
 
 export default AppBar;
