@@ -1,4 +1,4 @@
-const CACHE_NAME = 'whatsappweb-cache-v2';
+const CACHE_NAME = 'whatsappweb-cache-v3';
 const {
   assets,
 } = global.serviceWorkerOption;

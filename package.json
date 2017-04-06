@@ -24,6 +24,7 @@
     "babel-register": "^6.24.0",
     "body-parser": "^1.17.1",
     "classnames": "^2.2.5",
+    "compression-webpack-plugin": "^0.3.2",
     "cookie-parser": "^1.4.3",
     "css-loader": "^0.27.3",
     "express": "^4.15.2",
@@ -53,6 +54,7 @@
     "eslint-plugin-import": "*",
     "eslint-plugin-jsx-a11y": "*",
     "eslint-plugin-react": "*",
+    "webpack-bundle-analyzer": "^2.3.1",
     "webpack-dev-server": "^2.4.2"
   }
 }

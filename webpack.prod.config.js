@@ -4,6 +4,7 @@ const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ServiceWorkerPlugin = require('serviceworker-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 
 module.exports = {
@@ -12,6 +13,7 @@ module.exports = {
     app: './app',
     vendor: [
       'react',
+      'react-dom',
       'react-redux',
       'redux',
       'react-router',
@@ -42,11 +44,19 @@ module.exports = {
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new ExtractTextPlugin('app.css'),
+    new webpack.optimize.AggressiveMergingPlugin(),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer'
     }),
     new ServiceWorkerPlugin({
       entry: path.join(__dirname, './app/sw.js')
+    }),
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8
     })
   ],
   module: {
