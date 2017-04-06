@@ -43,7 +43,7 @@ module.exports = {
       minChunks: Infinity
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new ExtractTextPlugin('app.css'),
+    new ExtractTextPlugin('app.[chunkhash].css'),
     new webpack.optimize.AggressiveMergingPlugin(),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer'

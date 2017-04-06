@@ -33,8 +33,7 @@ app.get('*', (req, res) => {
       }
       let document = file.replace(/<div id="root"><\/div>/, `<div id="root">${markup}</div>`);
       document = document.replace(/'preloadedState'/, `'${JSON.stringify(preloadedState)}'`);
-      res.setHeader('Cache-Control', 'public, max-age=31536000');
-      res.setHeader('Expires', new Date(Date.now() + 2592000000).toUTCString());
+      res.setHeader('Cache-Control', 'public, max-age=86400');
       res.send(document);
     });
   });

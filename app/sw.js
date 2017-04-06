@@ -1,4 +1,4 @@
-const CACHE_NAME = 'whatsappweb-cache-v3';
+const CACHE_NAME = 'whatsappweb-cache-v4';
 const {
   assets,
 } = global.serviceWorkerOption;
@@ -19,8 +19,13 @@ self.addEventListener('install', event => {
   );
 });
 
-self.addEventListener('activate', () => {
+self.addEventListener('activate', event => {
   console.log('Service Woker Activated');
+  event.waitUntil(
+   caches.keys().then(cacheNames => Promise.all(
+       cacheNames.map(cacheName => caches.delete(cacheName))
+     ))
+ );
 });
 
 
