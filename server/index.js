@@ -11,7 +11,6 @@ const app = new (require('express'))();
 const port = process.env.PORT || 5000;
 
 app.use('/static', Express.static('./static'));
-app.use('/sw.js', Express.static('./static/sw.js'));
 
 
 app.get('*', (req, res) => {

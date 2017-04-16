@@ -5,6 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ServiceWorkerPlugin = require('serviceworker-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 
 module.exports = {
@@ -38,6 +39,11 @@ module.exports = {
         removeComments: true
       }
     }),
+    new PreloadWebpackPlugin({
+      rel: 'preload',
+      as: 'script',
+      include: 'asyncChunks'
+    }),
     new webpack.optimize.CommonsChunkPlugin({
       name: ['vendor'],
       minChunks: Infinity
@@ -49,7 +55,9 @@ module.exports = {
       defaultAttribute: 'defer'
     }),
     new ServiceWorkerPlugin({
-      entry: path.join(__dirname, './app/sw.js')
+      entry: path.join(__dirname, './app/sw.js'),
+      publicPath: '/static/',
+      excludes: ['**/.*', '**/*.map', '**/*.html']
     }),
     new CompressionPlugin({
       asset: '[path].gz[query]',

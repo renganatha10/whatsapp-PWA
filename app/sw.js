@@ -3,9 +3,11 @@ const {
   assets,
 } = global.serviceWorkerOption;
 
+console.log(assets);
 const urlsToCache = [
-  ...assets,
   '/',
+  './index.html',
+  ...assets,
 ];
 
 self.addEventListener('install', event => {
@@ -31,14 +33,9 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      }
-    )
+    caches.open(CACHE_NAME).then(cache => cache.match(event.request).then(response => response || fetch(event.request).then(response => {
+      cache.put(event.request, response.clone());
+      return response;
+    })))
   );
 });

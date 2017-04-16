@@ -20,17 +20,17 @@ $medium: 767px;
 $small: 480px;
 
 @mixin bp-large {
-  @media only screen and (max-width: $large) {
+  @media  (max-device-width: $large) {
     @content;
   }
 }
 @mixin bp-medium {
-  @media only screen and (max-width: $medium) {
+  @media (max-device-width: $medium) {
     @content;
   }
 }
 @mixin bp-small {
-  @media only screen and (max-width: $small) {
+  @media (max-device-width: $small) {
     @content;
   }
 }
