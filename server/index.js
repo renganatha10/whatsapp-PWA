@@ -10,7 +10,9 @@ import fs from 'fs';
 const app = new (require('express'))();
 const port = process.env.PORT || 5000;
 
-app.use('/static', Express.static('./static'));
+app.use('/sw.js', Express.static('./dist/sw.js'));
+app.use('/static', Express.static('./dist/static'));
+app.use('/favicon.ico', Express.static('./app/images/favicon.ico'));
 
 
 app.get('*', (req, res) => {
@@ -26,7 +28,7 @@ app.get('*', (req, res) => {
              <RouterContext {...renderProps}/>
            </Provider>);
 
-    fs.readFile('./static/index.html', 'utf8', (err, file) => {
+    fs.readFile('./dist/index.html', 'utf8', (err, file) => {
       if (err) {
         return console.log(err);
       }

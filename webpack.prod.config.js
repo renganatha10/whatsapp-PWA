@@ -25,9 +25,9 @@ module.exports = {
     ]
   },
   output: {
-    path: path.join(__dirname, 'static'),
-    filename: 'bundle.[name].[chunkhash].js',
-    publicPath: '/static/'
+    path: path.join(__dirname, 'dist'),
+    filename: 'static/bundle.[name].[chunkhash].js',
+    publicPath: '/'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -40,7 +40,7 @@ module.exports = {
       }
     }),
     new PreloadWebpackPlugin({
-      rel: 'preload',
+      rel: 'prefetch',
       as: 'script',
       include: 'asyncChunks'
     }),
@@ -49,15 +49,13 @@ module.exports = {
       minChunks: Infinity
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new ExtractTextPlugin('app.[chunkhash].css'),
+    new ExtractTextPlugin('static/app.[chunkhash].css'),
     new webpack.optimize.AggressiveMergingPlugin(),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer'
     }),
     new ServiceWorkerPlugin({
-      entry: path.join(__dirname, './app/sw.js'),
-      publicPath: '/static/',
-      excludes: ['**/.*', '**/*.map', '**/*.html']
+      entry: path.join(__dirname, './app/sw.js')
     }),
     new CompressionPlugin({
       asset: '[path].gz[query]',
@@ -94,7 +92,7 @@ module.exports = {
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
-        loader: 'file-loader',
+        loader: 'file-loader?name=static/[name].[ext]',
       },
       {
         test: /\.(jpg|png|gif)$/,

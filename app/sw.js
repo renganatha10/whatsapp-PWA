@@ -1,11 +1,11 @@
-const CACHE_NAME = 'whatsappweb-cache-v4';
+const CACHE_NAME = 'whatsappweb-cache-v8';
 const {
   assets,
 } = global.serviceWorkerOption;
 
-console.log(assets);
+
 const urlsToCache = [
-  '/',
+  './',
   './index.html',
   ...assets,
 ];
