@@ -1,9 +1,3 @@
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../../server/public/fonts/Roboto-Light.ttf'); /* IE9 Compat Modes */
-}
-
 $primaryColor: #dfdfdf;
 $backgroundColor: #eee;
 $secondaryColor: #ffffff;
@@ -14,11 +8,9 @@ body,html,#root{
   overflow: hidden;
   padding: 0px;
   margin: 0px;
-}
-
-body {
   font-family: 'Roboto';
 }
+
 
 #root  {
   position: absolute;

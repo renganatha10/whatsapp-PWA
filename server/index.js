@@ -6,14 +6,30 @@ import { RouterContext, match } from 'react-router';
 import configureStore from './../app/store/configureStore';
 import Express from 'express';
 import fs from 'fs';
+import expressStaticGzip from 'express-static-gzip';
+
 
 const app = new (require('express'))();
 const port = process.env.PORT || 5000;
 
-app.use('/sw.js', Express.static('./dist/sw.js'));
-app.use('/static', Express.static('./dist/static'));
-app.use('/favicon.ico', Express.static('./app/images/favicon.ico'));
 
+app.use('/favicon.ico', Express.static('./app/images/favicon.ico'));
+app.use('/sw.js', Express.static('./dist/sw.js'));
+app.use('/static/fonts', Express.static('./server/public/fonts'));
+app.use('/static', expressStaticGzip('./dist/static', {
+  maxAge: 31536000,
+  setHeaders(res) {
+    res.setHeader('Expires', new Date(Date.now() + 2592000000).toUTCString());
+    return res;
+  }
+}));
+
+app.get('*', (req, res, next) => {
+  if (req.headers['x-forwarded-proto'] !== 'https')
+    res.redirect('https://' + req.hostname + req.url);
+  else
+    next();
+});
 
 app.get('*', (req, res) => {
   match({ routes, location: req.url }, (err, redirectLocation, renderProps) => {
@@ -34,7 +50,7 @@ app.get('*', (req, res) => {
       }
       let document = file.replace(/<div id="root"><\/div>/, `<div id="root">${markup}</div>`);
       document = document.replace(/'preloadedState'/, `'${JSON.stringify(preloadedState)}'`);
-      res.setHeader('Cache-Control', 'public, max-age=86400');
+      res.setHeader('Cache-Control', 'no-cache');
       res.send(document);
     });
   });
