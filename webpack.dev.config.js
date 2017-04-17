@@ -51,6 +51,10 @@ module.exports = {
         test: /\.(jpg|png|gif)$/,
         include: /images/,
         loader: 'url-loader'
+      },
+      {
+        test: /manifest.json$/,
+        loader: 'file-loader?name=manifest.json'
       }
     ]
   }

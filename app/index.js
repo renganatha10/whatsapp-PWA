@@ -1,4 +1,9 @@
+/*eslint no-unused-vars: 0*/
 import React from 'react';
+import manifest from './manifest.json';
+import trophy from './images/trophy.png';
+import trophy2 from './images/trophy2.png';
+import trophy3 from './images/trophy3.png';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { browserHistory, match, Router } from 'react-router';

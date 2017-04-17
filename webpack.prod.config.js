@@ -9,7 +9,7 @@ const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'hidden-source-map',
   entry: {
     app: './app',
     vendor: [
@@ -98,6 +98,10 @@ module.exports = {
         test: /\.(jpg|png|gif)$/,
         include: /images/,
         loader: 'url-loader'
+      },
+      {
+        test: /manifest.json$/,
+        loader: 'file-loader?name=manifest.json'
       }
     ]
   }
