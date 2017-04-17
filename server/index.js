@@ -12,7 +12,7 @@ import expressStaticGzip from 'express-static-gzip';
 const app = new (require('express'))();
 const port = process.env.PORT || 5000;
 
-
+app.use('/manifest.json', Express.static('./dist/manifest.json'));
 app.use('/favicon.ico', Express.static('./app/images/favicon.ico'));
 app.use('/sw.js', Express.static('./dist/sw.js'));
 app.use('/static/fonts', Express.static('./server/public/fonts'));

@@ -29,6 +29,12 @@ module.exports = {
     filename: 'static/bundle.[name].[chunkhash].js',
     publicPath: '/'
   },
+  resolve: {
+    alias: {
+      react: 'preact-compat',
+      'react-dom': 'preact-compat'
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
