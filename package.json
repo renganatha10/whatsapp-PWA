@@ -1,0 +1,34 @@
+{
+  "name": "whatsapp",
+  "version": "1.0.0",
+  "description": "Whatsapp Web Using Next.js",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renganatha10/whatsapp-PWA.git"
+  },
+  "keywords": [
+    "Next.js"
+  ],
+  "author": "Renganatha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renganatha10/whatsapp-PWA/issues"
+  },
+  "homepage": "https://github.com/renganatha10/whatsapp-PWA#readme",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "9.2.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.6",
+    "@types/react": "^16.9.23",
+    "typescript": "^3.8.2"
+  }
+}
