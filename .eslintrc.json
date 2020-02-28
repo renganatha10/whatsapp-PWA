@@ -1,0 +1,91 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "settings": {
+    "react": {
+      "version": "16.13.0"
+    }
+  },
+  "plugins": ["react", "import", "prettier"],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "__DEV__": false,
+    "__dirname": false,
+    "alert": false,
+    "Blob": false,
+    "cancelAnimationFrame": false,
+    "cancelIdleCallback": false,
+    "clearImmediate": true,
+    "clearInterval": false,
+    "clearTimeout": false,
+    "console": false,
+    "escape": false,
+    "Event": false,
+    "EventTarget": false,
+    "exports": false,
+    "fetch": false,
+    "File": false,
+    "FileReader": false,
+    "FormData": false,
+    "global": true,
+    "Map": true,
+    "module": false,
+    "navigator": false,
+    "process": false,
+    "Promise": true,
+    "requestAnimationFrame": true,
+    "requestIdleCallback": true,
+    "require": false,
+    "Set": true,
+    "setImmediate": true,
+    "setInterval": false,
+    "setTimeout": false,
+    "WebSocket": false,
+    "window": false,
+    "XMLHttpRequest": false,
+    "jest": true
+  },
+  "rules": {
+    "indent": "off",
+    "no-var": 2,
+    "prefer-destructuring": 2,
+    "prefer-spread": 2,
+    "no-console": 2,
+    "no-useless-constructor": 2,
+    "require-atomic-updates": 0,
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-unused-vars": 2,
+    "@typescript-eslint/no-explicit-any": 0,
+    "no-async-promise-executor": 0,
+    "react/forbid-prop-types": 0,
+    "react/require-default-props": 0,
+    "react/no-unused-prop-types": 0,
+    "react/prop-types": 0,
+    "react/prefer-stateless-function": 0,
+    "react/no-multi-comp": 2,
+    "react/destructuring-assignment": 2,
+    "react/jsx-no-bind": 2,
+    "react/no-unsafe": 2,
+    "import/order": 2,
+    "import/newline-after-import": 2,
+    "prettier/prettier": 2
+  }
+}
