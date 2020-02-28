@@ -1,3 +1,0 @@
-export const SELECT_CHAT = 'SELECT_CHAT';
-export const SELECT_DETAILS = 'SELECT_DETAILS';
-export const CLOSE_CONTACT = 'CLOSE_CONTACT';
