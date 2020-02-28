@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Button from "./Button";
 
 const Home = () => (
   <div className="container">
@@ -20,6 +21,7 @@ const Home = () => (
           <p>Learn about Next.js in an interactive course with quizzes!</p>
         </a>
       </div>
+      <Button />
     </main>
     <footer>
       <a
