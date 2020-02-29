@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Button from "./Button";
+import Button from "../components/Button";
 
 const Home = () => (
   <div className="container">
@@ -38,15 +38,6 @@ const Home = () => (
     </footer>
 
     <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
       main {
         padding: 5rem 0;
         flex: 1;
