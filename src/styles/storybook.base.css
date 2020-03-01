@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+html {
+  font-family: "Poppins";
+  @apply font-poppins;
+}

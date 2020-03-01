@@ -1,36 +1,60 @@
 import React from "react";
 import Head from "next/head";
-import Button from "../components/Button";
+import GroupSearch from "../components/GroupSearch";
+import GroupHeader from "../components/GroupHeader";
+import Group from "../components/Group";
 
-const Home = () => (
-  <div className="main">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <main className="container">
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-      <Button />
-      <input
-        className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-        type="email"
-        placeholder="jane@example.com"
-      />
-    </main>
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer">
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
-  </div>
-);
+const Home = () => {
+  const onChangeText = () => {
+    return "";
+  };
+
+  return (
+    <div className="main">
+      <Head>
+        <title>WhatsWeb</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main className="container w-1/4">
+        <GroupHeader
+          avatarUrl={
+            "https://avatars3.githubusercontent.com/u/19145173?s=460&v=4"
+          }
+        />
+        <GroupSearch onChangeText={onChangeText} />
+        <Group
+          imageUrl={
+            "https://avatars3.githubusercontent.com/u/19145173?s=460&v=4"
+          }
+          heading={"CRED"}
+          firstMessage={
+            "Thanks for getting in touch. We request you to click on the link below to connect with CRED support: https://cred.onelink.me/k63y/support"
+          }
+          time={"10.50 PM"}
+        />
+        <Group
+          imageUrl={
+            "https://avatars3.githubusercontent.com/u/19145173?s=460&v=4"
+          }
+          heading={"CRED"}
+          firstMessage={
+            "Thanks for getting in touch. We request you to click on the link below to connect with CRED support: https://cred.onelink.me/k63y/support"
+          }
+          time={"10.50 PM"}
+        />
+        <Group
+          imageUrl={
+            "https://avatars3.githubusercontent.com/u/19145173?s=460&v=4"
+          }
+          heading={"CRED"}
+          firstMessage={
+            "Thanks for getting in touch. We request you to click on the link below to connect with CRED support: https://cred.onelink.me/k63y/support"
+          }
+          time={"10.50 PM"}
+        />
+      </main>
+    </div>
+  );
+};
 
 export default Home;

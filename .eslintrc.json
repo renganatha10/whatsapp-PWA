@@ -59,7 +59,8 @@
     "WebSocket": false,
     "window": false,
     "XMLHttpRequest": false,
-    "jest": true
+    "jest": true,
+    "afterEach": true
   },
   "rules": {
     "indent": "off",
