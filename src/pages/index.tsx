@@ -1,56 +1,21 @@
 import React from "react";
 import Head from "next/head";
-import GroupSearch from "../components/GroupSearch";
-import GroupHeader from "../components/GroupHeader";
-import Group from "../components/Group";
+import GroupDetailsHeader from "../components/GroupDetailHeader";
 
 const Home = () => {
-  const onChangeText = () => {
-    return "";
-  };
-
   return (
     <div className="main">
       <Head>
         <title>WhatsWeb</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="container w-1/4">
-        <GroupHeader
+      <main className="container h-full w-1/2 bg-gray-300">
+        <GroupDetailsHeader
           avatarUrl={
             "https://avatars3.githubusercontent.com/u/19145173?s=460&v=4"
           }
-        />
-        <GroupSearch onChangeText={onChangeText} />
-        <Group
-          imageUrl={
-            "https://avatars3.githubusercontent.com/u/19145173?s=460&v=4"
-          }
-          heading={"CRED"}
-          firstMessage={
-            "Thanks for getting in touch. We request you to click on the link below to connect with CRED support: https://cred.onelink.me/k63y/support"
-          }
-          time={"10.50 PM"}
-        />
-        <Group
-          imageUrl={
-            "https://avatars3.githubusercontent.com/u/19145173?s=460&v=4"
-          }
-          heading={"CRED"}
-          firstMessage={
-            "Thanks for getting in touch. We request you to click on the link below to connect with CRED support: https://cred.onelink.me/k63y/support"
-          }
-          time={"10.50 PM"}
-        />
-        <Group
-          imageUrl={
-            "https://avatars3.githubusercontent.com/u/19145173?s=460&v=4"
-          }
-          heading={"CRED"}
-          firstMessage={
-            "Thanks for getting in touch. We request you to click on the link below to connect with CRED support: https://cred.onelink.me/k63y/support"
-          }
-          time={"10.50 PM"}
+          groupName="Family"
+          groupMembers="Diviya, Mohan, Appa, Amma, Relatives, Freiends, Whatweve, I am Long, Loose, Mental, What I am Doing, Dont kNow"
         />
       </main>
     </div>

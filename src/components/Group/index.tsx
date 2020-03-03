@@ -12,7 +12,7 @@ const Group = React.memo((props: GroupPros) => {
   return (
     <div className={"mx-2 flex items-center"}>
       <img
-        className={"h-10 w-10 m-3 rounded-full"}
+        className={"h-8 w-8 m-3 rounded-full"}
         src={imageUrl}
         alt={`${heading} image`}
       />
@@ -25,7 +25,7 @@ const Group = React.memo((props: GroupPros) => {
             <span className={"text-xs"}>{time}</span>
           </div>
         </div>
-        <span className={"text-sm font-light"}>{firstMessage}</span>
+        <span className={"text-sm truncate font-light"}>{firstMessage}</span>
       </div>
     </div>
   );
