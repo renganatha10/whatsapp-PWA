@@ -10,7 +10,7 @@ interface OthersMessageProps {
 const OthersMessage = React.memo((props: OthersMessageProps) => {
   const { name, message, imageUrl, time } = props;
   return (
-    <div className="flex mx-2">
+    <div className="flex m-2">
       <div className="relative bg-white p-2 rounded-lg max-w-xs md:max-w-lg">
         <p className="text-lg pb-2 text-purple-500">{name}</p>
         <div className="flex flex-col items-start">

@@ -17,17 +17,13 @@ const GroupHeader = React.memo((props: GroupHeaderProps) => {
       </div>
       <div className="flex">
         <button>
-          <img className="mx-6" src={"./icons/donut_large.svg"} alt="Status" />
+          <img className="mx-6" src={"/icons/donut_large.svg"} alt="Status" />
         </button>
         <button>
-          <img className="mx-6" src={"./icons/message.svg"} alt="Message" />
+          <img className="mx-6" src={"/icons/message.svg"} alt="Message" />
         </button>
         <button>
-          <img
-            className="mx-6"
-            src={"./icons/more_vert.svg"}
-            alt="More Items"
-          />
+          <img className="mx-6" src={"/icons/more_vert.svg"} alt="More Items" />
         </button>
       </div>
     </div>

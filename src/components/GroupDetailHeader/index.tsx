@@ -23,21 +23,17 @@ const GroupDetailHeader = React.memo((props: GroupDetailsHeaderProps) => {
       </div>
       <div className="flex">
         <button>
-          <img className="mx-3" src={"./icons/search.svg"} alt="Search" />
+          <img className="mx-3" src={"/icons/search.svg"} alt="Search" />
         </button>
         <button>
           <img
             className="mx-3"
-            src={"./icons/attach_file.svg"}
+            src={"/icons/attach_file.svg"}
             alt="Attach File"
           />
         </button>
         <button>
-          <img
-            className="mx-3"
-            src={"./icons/more_vert.svg"}
-            alt="More Items"
-          />
+          <img className="mx-3" src={"/icons/more_vert.svg"} alt="More Items" />
         </button>
       </div>
     </div>

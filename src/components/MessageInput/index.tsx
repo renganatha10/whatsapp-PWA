@@ -20,14 +20,14 @@ const MessageInput = memo((props: MessageInputProps) => {
 
   return (
     <div className="relative justify-between flex bg-white p-2">
-      <img className="px-2" src="./icons/insert_emoticon.svg" alt="Emoticons" />
+      <img className="px-2" src="/icons/insert_emoticon.svg" alt="Emoticons" />
       <input
         className="bg-white px-4 py-2 focus:outline-none focus:shadow-outline border border-gray-400 rounded-full block w-full appearance-none leading-normal"
         onChange={onChange}
         value={searchText}
         type="text"
         placeholder="Search..."></input>
-      <img className="px-2" src="./icons/send.svg" alt="Send" />
+      <img className="px-2" src="/icons/send.svg" alt="Send" />
     </div>
   );
 });

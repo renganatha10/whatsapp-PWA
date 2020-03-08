@@ -28,7 +28,7 @@ const GroupSearch = memo((props: GroupSearchProps) => {
         placeholder="Search..."></input>
       <img
         className={"search-icon absolute"}
-        src="./icons/search.svg"
+        src="/icons/search.svg"
         alt="Search"
       />
       <style jsx>{`

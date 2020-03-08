@@ -5,7 +5,7 @@ interface GroupPros {
   heading: string;
   time: string;
   firstMessage: string;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
 }
 
 const Group = React.memo((props: GroupPros) => {

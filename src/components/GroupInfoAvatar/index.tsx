@@ -23,7 +23,7 @@ const GroupInfoAvatar = React.memo((props: GroupInfoAvatarProps) => {
           <p className="text-xs">{createdAt}</p>
         </div>
         <div>
-          <img className="h-5 w-5" src="./icons/create.svg" />
+          <img className="h-5 w-5" src="/icons/create.svg" />
         </div>
       </div>
     </div>
