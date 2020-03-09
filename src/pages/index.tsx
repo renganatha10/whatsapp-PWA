@@ -7,7 +7,7 @@ const Home = () => {
     <div className="main bg-purple-500 lg:px-16">
       <Head>
         <title>WhatsWeb</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <main className="container flex h-full bg-gray-300">
         <div className="lg:w-1/3 w-full border-r h-full border-gray-400 border-solid">

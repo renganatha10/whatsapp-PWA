@@ -18,7 +18,7 @@ const Groups = () => {
   return (
     <>
       <GroupInfoHeader avatarUrl="https://avatars3.githubusercontent.com/u/19145173?s=460&v=4" />
-      <List height={750} itemCount={1000} itemSize={68}>
+      <List height={690} itemCount={1000} itemSize={68}>
         {Column}
       </List>
     </>
