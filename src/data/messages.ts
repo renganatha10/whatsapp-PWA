@@ -2,7 +2,7 @@ export const messages = [
   {
     id: "1feab4f1-75a4-4fb0-8c43-a242c1995321",
     message: "iusto aut et",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T06:34:39.836Z",
     groupId: "872ff172-8993-4521-9653-ff03c8f87dec",
     userId: "fecbd464-0526-4aad-b2d8-bd9d8a5046ad"
@@ -214,7 +214,7 @@ export const messages = [
   {
     id: "093384f9-b7db-492c-9f02-239359f553a0",
     message: "et rerum quam",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T00:15:08.701Z",
     groupId: "5b16a116-a567-4be4-aec9-62579785c7c8",
     userId: "5fd4c295-7477-45b4-b1a4-9accb4accb56"
@@ -430,7 +430,7 @@ export const messages = [
     id: "75878787-9ae9-4428-92f5-cfdad6e825d8",
     message:
       "Nemo iure sed et maiores omnis rerum magni. Ratione possimus eum deserunt et ut earum. Nihil architecto repudiandae repellendus eum repellendus. Labore quas est illo. Explicabo nemo quia qui voluptate aliquid. Consequatur itaque ipsum et possimus distinctio cupiditate quia voluptatibus rerum.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T15:23:03.903Z",
     groupId: "8d46dd29-0f77-43af-ba98-472bc3fc8cdf",
     userId: "cbe68870-bcfe-4860-9820-c165fdb942ca"
@@ -642,7 +642,7 @@ export const messages = [
     id: "81093e14-662b-45ef-bc95-ce676de67af8",
     message:
       "Consequuntur aut suscipit modi quia et et. Error a qui mollitia. Sed optio id et et harum magnam magni sed est. Qui distinctio sit alias. Est est id molestiae vel et eveniet. Deserunt et consequatur omnis quo.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T08:00:49.949Z",
     groupId: "be36349b-a1a0-46d5-9664-b0b1e9d0b73d",
     userId: "4127c635-7dfa-46f6-b1e7-8e20c647c3dc"
@@ -857,7 +857,7 @@ export const messages = [
   {
     id: "d462580b-b5e9-4534-877c-fa7ab2d12c9e",
     message: "voluptas vitae in",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T08:25:14.567Z",
     groupId: "1a17c96a-b1e1-4abb-b2f2-169ef3d7230e",
     userId: "378efd6b-f5f7-42a0-bb04-3fe3b4a31b33"
@@ -1070,7 +1070,7 @@ export const messages = [
   {
     id: "fede9601-d576-41af-a97a-5b1557e89fcd",
     message: "quibusdam qui amet",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T13:04:02.535Z",
     groupId: "95f22060-f783-4ff1-954f-3c91b3be30a7",
     userId: "facf0b7e-b885-4f98-91d3-893735820fec"
@@ -1282,7 +1282,7 @@ export const messages = [
     id: "27af12b4-27c2-429c-9ad0-40f83bd76567",
     message:
       "Fugiat aut dolorem voluptatum incidunt et aperiam sit nihil. Earum nostrum nemo quia laborum fugit dolorem quam quo aliquam.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T20:18:55.118Z",
     groupId: "be36349b-a1a0-46d5-9664-b0b1e9d0b73d",
     userId: "a0a48215-745a-42bc-bd23-106f383c107a"
@@ -1488,7 +1488,7 @@ export const messages = [
   {
     id: "8d4416f8-3559-4a75-b0d1-1b06f850a9a7",
     message: "facilis voluptatem autem",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T12:04:02.216Z",
     groupId: "c2d94343-da40-4718-bebb-73093e74f484",
     userId: "2e6b3b25-1123-4a93-be7d-4a1fb57a2b0d"
@@ -1700,7 +1700,7 @@ export const messages = [
     id: "f62faa6a-618d-4987-a9df-4791e9fb245b",
     message:
       "Quod excepturi aut quia ut earum nesciunt sequi et nihil. Delectus porro dolorem omnis ex velit. Blanditiis recusandae esse eos voluptas. Dolorum vitae error aut ullam sit minus cumque. Dolorum dolorum voluptas vero non tenetur dignissimos ut.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T15:07:24.797Z",
     groupId: "5fed8b43-35a3-4034-89c7-cc7f6bc4d926",
     userId: "fdaa3b31-33e3-4e11-99a3-b2b99708af15"
@@ -1915,7 +1915,7 @@ export const messages = [
     id: "39cd06df-c81a-4805-8877-e1b030bcea68",
     message:
       "Dolores soluta inventore voluptas voluptatem quidem omnis consectetur et. Et sint laudantium in doloremque voluptas aspernatur eius. Fugit quos eaque omnis tempore. Quis sequi voluptatem deleniti voluptate corporis.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T18:34:26.752Z",
     groupId: "571085ac-5d60-46cd-b2ff-a54a6f7ec9b9",
     userId: "773b00cc-e08d-4c33-924f-12bce5a80bf7"
@@ -2132,7 +2132,7 @@ export const messages = [
     id: "b5174e38-d035-49d7-8435-f41b83b05418",
     message:
       "Et quia esse nostrum sit inventore ut est ut. Aut dolor tenetur repudiandae dolorem magnam fugit recusandae quod.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T20:29:17.651Z",
     groupId: "c2d6ce51-2ff4-41e2-a8c1-9820055861ce",
     userId: "ede4d405-7c70-4101-a7b5-9a30d77f81a4"
@@ -2347,7 +2347,7 @@ export const messages = [
   {
     id: "3d470d78-de07-4a31-92e7-d2db0883b8bd",
     message: "ratione asperiores ut",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T18:34:05.411Z",
     groupId: "d5f1c4a4-8431-44db-874f-2d178bdb7a15",
     userId: "f15f3aa2-bee8-415b-84e7-d93c03d3ff53"
@@ -2563,7 +2563,7 @@ export const messages = [
     id: "0a515704-2dd8-4ec5-a87b-9a47efb52362",
     message:
       "Qui quibusdam omnis aliquam nobis optio autem sed. Ut est sit officia ratione dolore rerum consequatur. Sint nobis eum vero qui dolores laborum accusantium. Autem expedita veritatis enim nemo fugit ut sed. Consequuntur voluptate assumenda quos ut autem et sed voluptatem. Nam et placeat eius.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T13:17:01.680Z",
     groupId: "117d76cf-ef35-440e-88ab-913923a796d2",
     userId: "f8663a49-3781-4373-8a38-a501bd58f27e"
@@ -2775,7 +2775,7 @@ export const messages = [
   {
     id: "c82853d2-6fc7-49fe-b020-abf7efcd175e",
     message: "dicta sed dolorem",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T17:21:00.445Z",
     groupId: "72b3cf2c-e34d-4855-a216-53c8f22b0917",
     userId: "24a637d5-2925-463f-9208-0adb0d66ad50"
@@ -2987,7 +2987,7 @@ export const messages = [
   {
     id: "630cada8-70f2-4e5a-a2ad-e0cf4314672d",
     message: "omnis aut excepturi",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T17:05:19.590Z",
     groupId: "55d60220-459a-454a-92ae-a08b8a77cdae",
     userId: "773b00cc-e08d-4c33-924f-12bce5a80bf7"
@@ -3198,7 +3198,7 @@ export const messages = [
     id: "f23ea77b-90b6-466a-9b1c-3e7463c74a5c",
     message:
       "Asperiores inventore est. Recusandae minus eos corrupti debitis enim quia quod fugiat. Ex aut praesentium numquam non quo minima.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T20:33:20.017Z",
     groupId: "0131bb2f-e7f2-496c-be92-babd680fd0b9",
     userId: "6086712d-81b1-4f8d-82ee-f0da2970b067"
@@ -3408,7 +3408,7 @@ export const messages = [
     id: "195691be-b2c8-493d-923b-3aa48e171d1f",
     message:
       "Itaque dolor praesentium dolorem. Impedit earum ipsa et quis sit autem laudantium est.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T18:47:40.863Z",
     groupId: "83bfdf37-41b1-43be-9773-fb0c4e176858",
     userId: "fdaa3b31-33e3-4e11-99a3-b2b99708af15"
@@ -3620,7 +3620,7 @@ export const messages = [
   {
     id: "833090e0-937d-4890-adec-f2411213599b",
     message: "sit sapiente sequi",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T12:06:46.949Z",
     groupId: "41ca458a-4ce8-49cd-ab82-654cc0c9a57a",
     userId: "3137e843-1205-460d-9fa3-cb6403116305"
@@ -3834,7 +3834,7 @@ export const messages = [
   {
     id: "7792b8d1-dd85-4316-ba70-4c3ff24ebf44",
     message: "repellendus repellendus praesentium",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T13:26:32.917Z",
     groupId: "5b16a116-a567-4be4-aec9-62579785c7c8",
     userId: "5fd4c295-7477-45b4-b1a4-9accb4accb56"
@@ -4050,7 +4050,7 @@ export const messages = [
     id: "7622749a-7940-4e0f-a027-2b190a875946",
     message:
       "Tempora eius est dolorem expedita consectetur ducimus. Adipisci fugiat adipisci laudantium. Reiciendis ullam doloribus veniam rem.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T22:40:50.561Z",
     groupId: "f62ee65e-65cb-43c4-ae4d-a1315a13145f",
     userId: "1164f40d-df1e-45bd-823d-8dc987df62ed"
@@ -4260,7 +4260,7 @@ export const messages = [
     id: "5a94faa2-b4e2-4860-9481-f5c810fbed52",
     message:
       "Ad quis est. Tempora explicabo soluta quidem corrupti vel voluptas. Amet totam officiis consequatur sed dignissimos numquam quo.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T12:22:50.193Z",
     groupId: "83bfdf37-41b1-43be-9773-fb0c4e176858",
     userId: "c8bb6b8d-7bd7-4a1b-b288-17b40bdb5fbf"
@@ -4472,7 +4472,7 @@ export const messages = [
   {
     id: "0c6969d9-b2d5-4a80-9661-35acaa879d3d",
     message: "cum a suscipit",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T20:45:40.652Z",
     groupId: "6a5248db-7a1e-499e-b1b8-462c01ec916b",
     userId: "a2909d97-57d1-4f0f-be98-ef4fecf0edfe"
@@ -4684,7 +4684,7 @@ export const messages = [
     id: "df7a30f6-227c-4ecb-9059-70bcd2eb92de",
     message:
       "Velit recusandae et ut ipsam repellendus et et. Magni qui dolor unde similique porro necessitatibus neque ex quasi.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T08:37:37.708Z",
     groupId: "248e4168-89e8-489f-8324-9bd6fc091037",
     userId: "caacb4e4-8aa4-48df-aaaa-15687ff1e387"
@@ -4899,7 +4899,7 @@ export const messages = [
     id: "8e34d15b-90b5-4dbf-b4a4-7db8839c1ed3",
     message:
       "Eligendi repellat tenetur dolor. At recusandae repellendus consequuntur veritatis itaque laudantium aut corrupti consequatur. Officia aut quidem voluptatibus inventore incidunt. Magni corporis a iusto culpa. Laborum fugiat nemo molestiae totam quia quos qui excepturi.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T17:56:31.537Z",
     groupId: "0131bb2f-e7f2-496c-be92-babd680fd0b9",
     userId: "fecbd464-0526-4aad-b2d8-bd9d8a5046ad"
@@ -5110,7 +5110,7 @@ export const messages = [
   {
     id: "7bf830ec-3edf-42c6-a88e-a392fd7a48ce",
     message: "quae aperiam exercitationem",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T10:34:51.482Z",
     groupId: "c2d6ce51-2ff4-41e2-a8c1-9820055861ce",
     userId: "6a7eeb70-1588-448a-b0f8-efbee269d234"
@@ -5317,7 +5317,7 @@ export const messages = [
     id: "dddd5d3b-00cc-4ce8-85c3-d1ac8b04f946",
     message:
       "Vero id nisi vitae temporibus rerum. Quibusdam iste odio. Totam quasi id similique minima ducimus impedit quis consequatur. Consequatur animi harum explicabo dolor quae minima atque reiciendis. Et sed occaecati excepturi eaque dolor consequuntur nobis veniam.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T21:17:29.382Z",
     groupId: "2aff33e2-ba80-46bd-bf8f-3fc80765c967",
     userId: "4127c635-7dfa-46f6-b1e7-8e20c647c3dc"
@@ -5529,7 +5529,7 @@ export const messages = [
     id: "10938c04-939f-405a-b8a6-50272f7faa21",
     message:
       "Repellat sed explicabo. Est voluptatum asperiores. Repellendus aut qui et. Consequuntur iusto quia dolorum et quos ipsa. Quia illo quia suscipit aut. Veniam suscipit vitae ea.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T11:04:13.842Z",
     groupId: "0a81ddb7-f5f0-4fad-92e1-e382961b6b84",
     userId: "119e535f-2865-4b1f-a511-bfca7a864612"
@@ -5741,7 +5741,7 @@ export const messages = [
     id: "b78d36f5-d7c2-4d71-8d42-8160c2165410",
     message:
       "Quasi cupiditate nihil aut dolores. Quidem quasi dolores quos sit omnis ut earum eius. Reiciendis fugit repellendus impedit.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T23:51:05.766Z",
     groupId: "23e579d3-1380-43c3-837e-cb8b9ecd0935",
     userId: "f3731555-bfe8-4638-bb26-c02dedfade20"
@@ -5956,7 +5956,7 @@ export const messages = [
   {
     id: "1e966e7e-a859-40ce-aae6-f4ec7182783f",
     message: "possimus sint totam",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T14:17:16.411Z",
     groupId: "1a17c96a-b1e1-4abb-b2f2-169ef3d7230e",
     userId: "f15f3aa2-bee8-415b-84e7-d93c03d3ff53"
@@ -6169,7 +6169,7 @@ export const messages = [
     id: "0beb89a9-f62c-4d17-90fe-a835502e40a4",
     message:
       "Ex repudiandae voluptatem odio quos nam consequatur. Repellat eaque repudiandae deserunt rerum earum dolore rerum quasi asperiores. Exercitationem animi molestiae aut. Vel sapiente et et nam expedita natus consequatur. Qui aut officiis quis deleniti. Magnam et qui labore quo similique vitae illum placeat quo.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T23:53:35.010Z",
     groupId: "4741ce93-1b07-40b6-82f0-22eaeaece4fa",
     userId: "5596a631-ec3f-4276-bc68-9fb0041a3124"
@@ -6378,7 +6378,7 @@ export const messages = [
     id: "2fbc1370-cfc5-422e-99ef-01cfc61d044f",
     message:
       "Aliquam dolores totam debitis est. Ut et quidem harum qui porro ut.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T10:50:25.397Z",
     groupId: "d5f1c4a4-8431-44db-874f-2d178bdb7a15",
     userId: "5fd4c295-7477-45b4-b1a4-9accb4accb56"
@@ -6589,7 +6589,7 @@ export const messages = [
   {
     id: "2e009adc-6e3d-4025-800d-d2de11614caf",
     message: "vel ea odit",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T05:48:36.802Z",
     groupId: "0131bb2f-e7f2-496c-be92-babd680fd0b9",
     userId: "fecbd464-0526-4aad-b2d8-bd9d8a5046ad"
@@ -6803,7 +6803,7 @@ export const messages = [
   {
     id: "46d121a0-d70d-4ac3-914e-304a00ae7c41",
     message: "aut officiis qui",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T03:01:21.492Z",
     groupId: "3a81b3c4-9484-413b-9441-1cfd4b36c966",
     userId: "4ca2ddd3-4bab-495d-808a-325c3af08962"
@@ -7015,7 +7015,7 @@ export const messages = [
     id: "93a7cbea-96f0-474f-ba4e-6406637e7053",
     message:
       "Velit tempore nobis eum asperiores aspernatur suscipit adipisci deleniti sed. Maiores et ipsum porro vitae facilis.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T00:55:09.392Z",
     groupId: "c2d6ce51-2ff4-41e2-a8c1-9820055861ce",
     userId: "cbe68870-bcfe-4860-9820-c165fdb942ca"
@@ -7225,7 +7225,7 @@ export const messages = [
     id: "ac455037-20f4-402d-b84c-b4ac077dd428",
     message:
       "Est sunt incidunt voluptatum. Quae officiis sint. Voluptas natus est velit velit assumenda. Modi illum adipisci ut. Quae rerum repellendus. Tempora reprehenderit voluptates voluptate nesciunt rerum qui.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T16:56:37.699Z",
     groupId: "703f6cbe-ef09-42b8-ba46-cd0574430e03",
     userId: "a4c3658c-8ddb-47eb-a3a4-d4746c337a8b"
@@ -7439,7 +7439,7 @@ export const messages = [
     id: "7800c145-b298-4862-b41f-2979cc3b65cc",
     message:
       "Ipsum a autem illum dolores necessitatibus quae assumenda. Culpa et distinctio voluptatem eius nemo distinctio iure.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T22:06:58.878Z",
     groupId: "703f6cbe-ef09-42b8-ba46-cd0574430e03",
     userId: "facf0b7e-b885-4f98-91d3-893735820fec"
@@ -7650,7 +7650,7 @@ export const messages = [
     id: "6275132f-6263-4da7-a4a0-1f1b19c1e0ae",
     message:
       "Maxime temporibus ut officiis repudiandae hic enim. Repellendus a eos quisquam omnis impedit aut non. Impedit iusto quisquam iste repudiandae ut exercitationem optio nihil et.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T02:23:50.738Z",
     groupId: "5b16a116-a567-4be4-aec9-62579785c7c8",
     userId: "5fd4c295-7477-45b4-b1a4-9accb4accb56"
@@ -7860,7 +7860,7 @@ export const messages = [
   {
     id: "5d274ce4-62cd-43d7-85ea-4597dfe3a9e4",
     message: "blanditiis tempore et",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T05:34:39.499Z",
     groupId: "d0d7fa4e-d9d8-4186-9c15-4728c0f79d1a",
     userId: "f15f3aa2-bee8-415b-84e7-d93c03d3ff53"
@@ -8072,7 +8072,7 @@ export const messages = [
   {
     id: "8a3e23e7-6a8b-47d6-8c45-7da0bab8e0f0",
     message: "aut aut eos",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-07T15:44:55.198Z",
     groupId: "b56966ff-6300-4d94-a162-5ff6f6c1bf43",
     userId: "aeaed16a-e3dc-4fba-bf10-a0f8d612624a"
@@ -8284,7 +8284,7 @@ export const messages = [
     id: "0f89482a-9e0a-4fa6-9f73-91e53dc757bb",
     message:
       "Nisi non nihil ut natus modi. Maiores modi reprehenderit sunt consequatur ut. Nisi expedita dolorem magni illum earum est facilis. Eligendi expedita non delectus maxime vel. Nihil aperiam vero. Ab dolorem et modi.",
-    messageImageUrl: "http://loremflickr.com/640/480/people",
+    messageImageUrl: "https://loremflickr.com/640/480/people",
     createdTime: "2020-03-06T21:00:22.073Z",
     groupId: "6a5248db-7a1e-499e-b1b8-462c01ec916b",
     userId: "5fd4c295-7477-45b4-b1a4-9accb4accb56"
