@@ -12,7 +12,7 @@ export default ({ query: { id } }, res) => {
     );
 
     const [latestMessage] = groupMessages.sort((a, b) => {
-      if (new Date(a.createdTime) > new Date(b.createdTime)) {
+      if (new Date(a.createdTime) < new Date(b.createdTime)) {
         return 1;
       } else {
         return -1;
@@ -20,16 +20,25 @@ export default ({ query: { id } }, res) => {
     });
 
     const { description, id, imageUrl, name } = group;
-    const { message } = latestMessage;
+    const { message, createdTime } = latestMessage;
 
     groupsResponses.push({
       id,
       imageUrl,
       name,
       description,
-      latestMessage: message
+      latestMessage: message,
+      createdTime
     });
   });
 
-  res.status(200).json(groupsResponses);
+  res.status(200).json(
+    groupsResponses.sort((a, b) => {
+      if (new Date(a.createdTime) < new Date(b.createdTime)) {
+        return 1;
+      } else {
+        return -1;
+      }
+    })
+  );
 };

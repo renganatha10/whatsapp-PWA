@@ -1,7 +1,7 @@
 import React, { useCallback, memo, useState } from "react";
 
 interface GroupSearchProps {
-  onChangeText: (text: string) => void;
+  onChangeText?: (text: string) => void;
 }
 
 const GroupSearch = memo((props: GroupSearchProps) => {

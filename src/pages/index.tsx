@@ -1,14 +1,12 @@
 import React from "react";
-import Head from "next/head";
+
 import Groups from "../containers/Groups";
+
+import { fetchGroups } from "../store/groups/actions";
 
 const Home = () => {
   return (
     <div className="main bg-purple-500 lg:px-16">
-      <Head>
-        <title>WhatsWeb</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
       <main className="container flex h-full bg-gray-300">
         <div className="lg:w-1/3 w-full border-r h-full border-gray-400 border-solid">
           <Groups />
@@ -21,6 +19,11 @@ const Home = () => {
       </main>
     </div>
   );
+};
+
+Home.getInitialProps = async ctx => {
+  ctx.store.dispatch(fetchGroups("f15f3aa2-bee8-415b-84e7-d93c03d3ff53"));
+  return { stars: [] };
 };
 
 export default Home;
