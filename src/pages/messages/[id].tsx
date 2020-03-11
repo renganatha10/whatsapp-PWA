@@ -2,6 +2,8 @@ import React from "react";
 import Groups from "../../containers/Groups";
 import Messages from "../../containers/Messages";
 
+import { fetchGroups } from "../../store/groups/actions";
+
 const MessagesPage = () => {
   return (
     <div className="main bg-purple-500 lg:px-16">
@@ -18,3 +20,8 @@ const MessagesPage = () => {
 };
 
 export default MessagesPage;
+
+MessagesPage.getInitialProps = async ctx => {
+  ctx.store.dispatch(fetchGroups("f15f3aa2-bee8-415b-84e7-d93c03d3ff53"));
+  return {};
+};

@@ -23,7 +23,7 @@ const Home = () => {
 
 Home.getInitialProps = async ctx => {
   ctx.store.dispatch(fetchGroups("f15f3aa2-bee8-415b-84e7-d93c03d3ff53"));
-  return { stars: [] };
+  return {};
 };
 
 export default Home;

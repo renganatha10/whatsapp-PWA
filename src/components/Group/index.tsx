@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useCallback } from "react";
+import Router from "next/router";
 
 interface GroupPros {
+  id: string;
   imageUrl: string;
   heading: string;
   time: string;
@@ -9,9 +11,14 @@ interface GroupPros {
 }
 
 const Group = React.memo((props: GroupPros) => {
-  const { imageUrl, style, heading, time, firstMessage } = props;
+  const { id, imageUrl, style, heading, time, firstMessage } = props;
+
+  const onButtonCLick = useCallback(() => {
+    Router.push(`/messages/${id}`);
+  }, []);
+
   return (
-    <button style={style}>
+    <button onClick={onButtonCLick} style={style}>
       <div className={"mx-2 flex items-center"}>
         <img
           className={"h-8 w-8 m-3 rounded-full"}

@@ -13,10 +13,11 @@ interface Props extends ListChildComponentProps {
 const GroupItem = (props: Props) => {
   const { data, style, index } = props;
   const group = data[index];
-  const { latestMessage, name, imageUrl, createdTime } = group;
+  const { id, latestMessage, name, imageUrl, createdTime } = group;
   const time = dayjs(createdTime).format("DD/MM/YY HH:mm");
   return (
     <Group
+      id={id}
       firstMessage={latestMessage}
       style={style}
       heading={name}

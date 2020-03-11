@@ -22,7 +22,8 @@
     "prebuild": "find src -name __tests__ -type d -exec rm -rf {} \\;",
     "start": "next start",
     "test": "jest",
-    "storybook": "start-storybook -p 6006 -c .storybook"
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "autoprefixer": "^9.7.4",

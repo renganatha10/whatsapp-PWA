@@ -3,7 +3,7 @@ import * as constants from "./constants";
 interface InitialState {
   data: constants.Group[];
   loading: boolean;
-  error: object;
+  error: null | object;
 }
 
 const initialState: InitialState = {
@@ -15,17 +15,18 @@ const initialState: InitialState = {
 interface Action {
   type: string;
   payload: Record<string, constants.Group>;
+  error: object;
 }
 
 const groups = (state = initialState, action: Action) => {
-  const { payload, type } = action;
+  const { payload, type, error } = action;
   switch (type) {
     case constants.FETCH_GROUPS:
       return { ...state, loading: true };
     case constants.FETCH_GROUPS_SUCCESS:
-      return { ...state, data: payload, loading: false };
+      return { ...state, data: payload, error: null, loading: false };
     case constants.FETCH_GROUPS_FAILURE:
-      return { ...state, error: payload, loading: false };
+      return { ...state, error, loading: false };
     default:
       return state;
   }
