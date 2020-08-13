@@ -26,10 +26,16 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@sentry/browser": "^5.21.1",
+    "@sentry/integrations": "^5.21.1",
+    "@sentry/node": "^5.21.1",
+    "@sentry/webpack-plugin": "^1.12.1",
+    "@zeit/next-source-maps": "0.0.4-canary.1",
     "autoprefixer": "^9.7.4",
     "dayjs": "^1.8.22",
     "isomorphic-unfetch": "^3.0.0",
     "next": "9.3.2",
+    "next-compose-plugins": "^2.2.0",
     "next-offline": "^5.0.0",
     "next-redux-saga": "^4.1.2",
     "next-redux-wrapper": "^5.0.0",
