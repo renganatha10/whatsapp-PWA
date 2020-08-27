@@ -13,7 +13,7 @@ const Home = () => {
         </div>
         <div className="lg:mx-40 lg:block hidden lg:w-2/3 lg:h-full">
           <div className="flex h-full">
-            <img src="/icons/group_chat.svg" alt="GroupChat" />
+            {/* <img src="/icons/group_chat.svg" alt="GroupChat" /> */}
           </div>
         </div>
       </main>
