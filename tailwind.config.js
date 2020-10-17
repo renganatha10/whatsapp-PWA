@@ -7,6 +7,5 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [],
-  purge: ["./src/**/*.js"]
+  plugins: []
 };
